@@ -1,0 +1,164 @@
+# Name : Sharanya Manohar
+
+# iNeuron Assignmment 2
+
+1.What are the two values of the Boolean data type? How do you write them?
+
+Ans1-The two values of Boolean data type is True or False, Boolean expressions use relational and logical operators. The result of a Boolean expression is either true or false.
+
+
+2. What are the three different types of Boolean operators?
+
+Ans2- and , or , and not.
+
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+
+Ans3-True and True is True.
+
+True and False is False.
+
+False and True is False.
+
+False and False is False.
+
+True or True is True.
+
+True or False is True.
+
+False or True is True.
+
+False or False is False.
+
+not True is False.
+
+not False is True.
+
+True is 1 and False is 0
+
+Truth Table for AND
+A B output
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+
+Truth Table for OR
+A B output
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+
+Truth Table for NOT
+A output
+0 1
+1 0
+
+
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5)    
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+
+print((5 > 4) and (3 == 5))    
+print(not (5 > 4))
+print((5 > 4) or (3 == 5))
+print(not ((5 > 4) or (3 == 5)))
+print((True and True) and (True == False))
+print((not False) or (not True))
+
+
+
+5. What are the six comparison operators?
+
+Ans5-The six comparison operators are equal to, not equal to, greater than, greater than or equal to, less than, and less than or equal to.
+
+
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+
+Ans6-(==)is the equal to symbol it which it compares the 2 values,whether it is equal(same) or not
+(x=2) is the assignment operator in which we are assigning 2 to the variable x
+
+5==4   #-Equal to
+
+x=2    #Assignment operator
+x
+
+
+7. Identify the three blocks in this code:
+
+spam = 0
+if spam == 10:
+    print('eggs') #Block 1
+if spam > 5:
+    print('bacon') #Block 2
+else:
+    print('ham') #Block 3
+    print('spam')
+    print('spam')
+
+
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+
+spam = int(input("Input a no."))
+if spam == 1:
+    print("Hello")
+elif spam == 2:
+    print("Howdy")
+else:
+    print("Greetings!")
+    
+    
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+
+Ans- If program is stuck in endless loop we will press ctrl+c.
+
+10. How can you tell the difference between break and continue?
+
+# use of break
+for i in range(10):
+    if(i==7):
+        break
+    print(i)
+    
+print('Breaked')
+#use of  continue
+for i in range(10):
+    if(i==7):
+        continue
+    print(i)
+
+Break-As the statemnt is True at particular point its break and come out of the loop .It called as stop 
+Continue-If the condition is given,if it trues then it just skip the particular satement and then it continues.Its called as skip
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+
+Ans11-As 3 of then gives same output,but range(10) has no start value so by default it takes 0 and end at 9(excluding 10)
+range(0,10)-It has the start value ,even it print 0 to 9(excluding 10)
+range(0,10,1)-It start from 0 and and end at 9(excluding 10) but step size is given as 1
+(start_value,end_value,step_size)
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+
+#for loop
+for i in range(1,11):
+    print(i)
+
+#while loop
+a=1
+while a<=10:
+    print(a)
+    a+=1
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+
+This function can be called with spam.bacon()
